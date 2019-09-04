@@ -56,6 +56,20 @@ Implemented.
 
 [Browser support](https://whatwebcando.today/payments.html)
 
+## ❓Home Screen installation
+
+TODO.
+
+[Browser support](https://whatwebcando.today/installation.html)
+
+## ❓Local push notifications
+
+TODO.
+
+[Browser support](https://whatwebcando.today/local-notifications.html)
+
+*Caveat: no support on iOS.*
+
 ## 👎 Location-based push notifications (geofencing)
 
 [Browser support](https://whatwebcando.today/geofencing.html)
