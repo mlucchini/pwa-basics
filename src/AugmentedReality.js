@@ -6,7 +6,7 @@ class AugmentedReality extends React.Component {
     render() {
         return (
             <div className="AugmentedReality">
-                <AFrameRenderer inherent={true} canvasWidth='500'>
+                <AFrameRenderer inherent={true}>
                     <Marker parameters={{ preset: 'hiro' }}>
                         <a-box color="blue" position="0 0.09 0" scale="0.4 0.8 0.8">
                             <a-animation
