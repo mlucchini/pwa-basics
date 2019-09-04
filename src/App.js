@@ -1,26 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
+import Geolocation from './Geolocation'
+import Scanner from './Scanner'
+import AugmentedReality from './AugmentedReality'
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import './App.css';
+import 'react-tabs/style/react-tabs.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+      <div className="App">
+          <Tabs>
+              <TabList>
+                  <Tab>Geolocation</Tab>
+                  <Tab>Scanner</Tab>
+                  <Tab>AR</Tab>
+              </TabList>
+              <TabPanel>
+                  <Geolocation/>
+              </TabPanel>
+              <TabPanel>
+                  <Scanner/>
+              </TabPanel>
+              <TabPanel>
+                  <AugmentedReality/>
+              </TabPanel>
+          </Tabs>
+      </div>
+    );
 }
 
 export default App;
