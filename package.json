@@ -8,11 +8,12 @@
     "react-qr-reader": "^2.2.1",
     "react-scripts": "3.1.1",
     "react-tabs": "^3.0.0",
-    "react-web-ar": "1.0.0-beta2"
+    "react-web-ar": "1.0.0-beta2",
+    "workbox-cli": "^4.3.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && workbox generateSW",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
