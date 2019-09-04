@@ -1,7 +1,8 @@
 import React from 'react';
-import Geolocation from './Geolocation'
-import Scanner from './Scanner'
-import AugmentedReality from './AugmentedReality'
+import Geolocation from './Geolocation';
+import Scanner from './Scanner';
+import AugmentedReality from './AugmentedReality';
+import Payment from './Payment';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import './App.css';
 import 'react-tabs/style/react-tabs.css';
@@ -14,6 +15,7 @@ function App() {
                   <Tab>Geolocation</Tab>
                   <Tab>Scanner</Tab>
                   <Tab>AR</Tab>
+                  <Tab>Payment</Tab>
               </TabList>
               <TabPanel>
                   <Geolocation/>
@@ -23,6 +25,9 @@ function App() {
               </TabPanel>
               <TabPanel>
                   <AugmentedReality/>
+              </TabPanel>
+              <TabPanel>
+                  <Payment/>
               </TabPanel>
           </Tabs>
       </div>

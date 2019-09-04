@@ -50,6 +50,12 @@ Implemented.
 
 *Caveat: the user must accept camera usage when prompted.*
 
+## 👍 Payment
+
+Implemented.
+
+[Browser support](https://whatwebcando.today/payments.html)
+
 ## 👎 Location-based push notifications (geofencing)
 
 [Browser support](https://whatwebcando.today/geofencing.html)
