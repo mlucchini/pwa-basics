@@ -4,6 +4,7 @@ import Scanner from './Scanner';
 import AugmentedReality from './AugmentedReality';
 import Payment from './Payment';
 import InstallationPrompt from './InstallationPrompt';
+import LocalNotifications from './LocalNotifications';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import './App.css';
 import 'react-tabs/style/react-tabs.css';
@@ -17,6 +18,7 @@ function App() {
                   <Tab>Scanner</Tab>
                   <Tab>AR</Tab>
                   <Tab>Payment</Tab>
+                  <Tab>Push</Tab>
               </TabList>
               <TabPanel>
                   <Geolocation/>
@@ -29,6 +31,9 @@ function App() {
               </TabPanel>
               <TabPanel>
                   <Payment/>
+              </TabPanel>
+              <TabPanel>
+                  <LocalNotifications/>
               </TabPanel>
           </Tabs>
           <InstallationPrompt/>

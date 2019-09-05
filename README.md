@@ -71,9 +71,9 @@ installable by the user (unless they use the browser settings). Upon installatio
 we will not be able to prompt them to install the app for 3 months (on Chrome, AFAIK). We
 must rely mostly on the user touching the Share button or opening their browser settings.*
 
-## ❓Local push notifications
+## 👍 Local push notifications
 
-TODO.
+Implemented.
 
 [Browser support](https://whatwebcando.today/local-notifications.html)
 

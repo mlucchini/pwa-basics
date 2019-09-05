@@ -34,18 +34,24 @@ class Payment extends React.Component {
     }
 
     sendPaymentToServer = instrumentResponse => {
-        window.setTimeout(() => {
-            instrumentResponse.complete('success')
-                .then(() => this.setState({transactionResult: this.instrumentToString(instrumentResponse)}))
-                .catch(err => console.error(err));
+        window.setTimeout(async () => {
+            try {
+                await instrumentResponse.complete('success');
+                this.setState({transactionResult: this.instrumentToString(instrumentResponse)});
+            } catch(err) {
+                console.error(err);
+            }
         }, 2000);
     }
 
-    handleBuy = () => {
+    handleBuy = async () => {
         const request = this.initPaymentRequest();
-        request.show()
-            .then((instrumentResponse) => this.sendPaymentToServer(instrumentResponse))
-            .catch(err => console.error(err));
+        try {
+            const instrumentResponse = await request.show();
+            this.sendPaymentToServer(instrumentResponse);
+        } catch(err) {
+            console.error(err);
+        }
     }
 
     render() {
