@@ -44,11 +44,15 @@ Implemented.
 
 Implemented.
 
+[Browser support](https://whatwebcando.today/vr.html)
+
 *Point the camera on the following marker and you should see a blue shape animate in front of it:*
 
 ![Image of Hiro marker](https://jeromeetienne.github.io/AR.js/data/images/HIRO.jpg)
 
-*Caveat: the user must accept camera usage when prompted.*
+*Caveat: the user must accept camera usage when prompted; this implementation is functional
+but does not rely on the HTML5 specification because most browsers have no or little support for
+WebVR API and WebXR Device API.*
 
 ## 👍 Payment
 
@@ -56,11 +60,16 @@ Implemented.
 
 [Browser support](https://whatwebcando.today/payments.html)
 
-## ❓Home Screen installation
+## 👍 Custom Home Screen installation
 
-TODO.
+Implemented.
 
 [Browser support](https://whatwebcando.today/installation.html)
+
+*Caveat: the application is not entirely in control of the moment the application will be 
+installable by the user (unless they use the browser settings). Upon installation refusal,
+we will not be able to prompt them to install the app for 3 months (on Chrome, AFAIK). We
+must rely mostly on the user touching the Share button or opening their browser settings.*
 
 ## ❓Local push notifications
 
@@ -75,6 +84,9 @@ TODO.
 [Browser support](https://whatwebcando.today/geofencing.html)
 
 This is not implemented in any browser.
+
+*While geofencing is supported on both Android and iOS (on native applications), it is always
+possible to either implement it ourselves or use a third-party service to make it work on the web.*
 
 **Native is required.**
 

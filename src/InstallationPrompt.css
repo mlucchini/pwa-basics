@@ -1,0 +1,8 @@
+.InstallationPrompt {
+    text-align: center;
+}
+
+.InstallButton {
+    position: absolute;
+    bottom: 1px;
+}

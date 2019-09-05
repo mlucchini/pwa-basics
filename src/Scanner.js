@@ -11,7 +11,7 @@ class Scanner extends React.Component {
         this.setState({scannedText: data})
     }
 
-    positionError = err => {
+    scanError = err => {
         this.setState({scannedText: `Error (${err})`})
     }
 

@@ -3,6 +3,7 @@ import Geolocation from './Geolocation';
 import Scanner from './Scanner';
 import AugmentedReality from './AugmentedReality';
 import Payment from './Payment';
+import InstallationPrompt from './InstallationPrompt';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import './App.css';
 import 'react-tabs/style/react-tabs.css';
@@ -30,6 +31,7 @@ function App() {
                   <Payment/>
               </TabPanel>
           </Tabs>
+          <InstallationPrompt/>
       </div>
     );
 }
