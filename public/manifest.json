@@ -1,6 +1,6 @@
 {
-  "short_name": "Visitor App",
-  "name": "Visitor App",
+  "short_name": "PWA Basics",
+  "name": "PWA Basics",
   "icons": [
     {
       "src": "favicon.ico",

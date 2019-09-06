@@ -32,7 +32,7 @@ class InstallationPrompt extends React.Component {
             <div className="InstallationPrompt">
                 <Conditional condition={this.state.installButton}>
                     <button className="InstallButton" onClick={this.installApp}>
-                        Install the Visitor App!
+                        Install the PWA Basics App!
                     </button>
                 </Conditional>
             </div>
